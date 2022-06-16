@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+    <style>
+        .main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            background-color: antiquewhite;
+            width: fit-content;
+            height: fit-content;
+            padding: 30px;
+        }
+        input[type=text]{
+            width: 100%;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: antiquewhite;
+        }
+        input[type=email]{
+            width: 100%;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: antiquewhite;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <form action="validate" method="post">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name" ></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>PhoneNumber</td>
+                        <td><input type="text" name="phonenumber" ></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" value="male"> Male 
+                            <input type="radio" name="gender" value="female"> Female 
+                        </td>
+                    </tr>
+                    <tr id="submit">
+                        <td>
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
